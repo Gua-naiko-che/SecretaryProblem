@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaltingProblemUI", "HaltingProblemUI\HaltingProblemUI.csproj", "{8CB8A02A-7FF5-4DC4-A40D-9A2DAE3F0362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaltingProblem.Core", "HaltingProblem.Core\HaltingProblem.Core.csproj", "{AD3B8FB9-ED7B-4171-8819-39C335635BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CB8A02A-7FF5-4DC4-A40D-9A2DAE3F0362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB8A02A-7FF5-4DC4-A40D-9A2DAE3F0362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB8A02A-7FF5-4DC4-A40D-9A2DAE3F0362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB8A02A-7FF5-4DC4-A40D-9A2DAE3F0362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3B8FB9-ED7B-4171-8819-39C335635BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3B8FB9-ED7B-4171-8819-39C335635BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3B8FB9-ED7B-4171-8819-39C335635BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3B8FB9-ED7B-4171-8819-39C335635BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
