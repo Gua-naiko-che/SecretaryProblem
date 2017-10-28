@@ -1,4 +1,4 @@
-﻿namespace HaltingProblemUI
+﻿namespace HaltingProblem.UI
 {
     partial class Form1
     {

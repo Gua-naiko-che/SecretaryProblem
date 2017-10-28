@@ -6,14 +6,14 @@ using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
 
-namespace HaltingProblemUI
+namespace HaltingProblem.UI
 {
     public partial class Form1 : Form
     {
-        public Form1(List<Result> results)
+        public Form1(IReadOnlyCollection<Result> results)
         {
             InitializeComponent();
-            var myModel = new PlotModel { Title = "Example 1" };
+            var myModel = new PlotModel { Title = "Best % and average quality in function of tolerance" };
             myModel.Axes.Add(new LinearAxis {Title = "Tolerance", Position = AxisPosition.Bottom});
 
             var bestPercentageSeries = new LineSeries { Title = "Best percentage" };

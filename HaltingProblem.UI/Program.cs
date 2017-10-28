@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows.Forms;
 
-namespace HaltingProblemUI
+namespace HaltingProblem.UI
 {
     internal static class Program
     {
