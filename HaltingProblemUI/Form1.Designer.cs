@@ -33,11 +33,12 @@
             // 
             // plotView1
             // 
-            this.plotView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plotView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.plotView1.Location = new System.Drawing.Point(0, 0);
             this.plotView1.Name = "plotView1";
             this.plotView1.PanCursor = System.Windows.Forms.Cursors.Hand;
-            this.plotView1.Size = new System.Drawing.Size(661, 576);
+            this.plotView1.Size = new System.Drawing.Size(661, 457);
             this.plotView1.TabIndex = 1;
             this.plotView1.Text = "plot1";
             this.plotView1.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;

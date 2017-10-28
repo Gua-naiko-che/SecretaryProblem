@@ -12,19 +12,43 @@ namespace HaltingProblemUI
         public Form1(List<Result> results)
         {
             InitializeComponent();
-            var myModel = new PlotModel { Title = "Example 1" };
+            //var myModel = new PlotModel { Title = "Example 1" };
 
-            var bestPercentage = new LineSeries();
-            bestPercentage.Points.AddRange(results.Select(r => new DataPoint(r.Tolerance, r.BestSecretaryPercentage * 100)));
-            bestPercentage.Title = "Best percentage";
+            //var bestPercentageSeries = new LineSeries { Title = "Best percentage" };
+            //bestPercentageSeries.Points.AddRange(results.Select(r => new DataPoint(r.Tolerance, r.BestSecretaryPercentage * 100)));
 
-            var average = new LineSeries();
-            average.Points.AddRange(results.Select(r => new DataPoint(r.Tolerance, r.AverageQuality)));
-            average.Title = "Average";
+            //var averageSeries = new LineSeries { Title = "Average" };
+            //averageSeries.Points.AddRange(results.Select(r => new DataPoint(r.Tolerance, r.AverageQuality)));
 
-            myModel.Series.Add(bestPercentage);
-            myModel.Series.Add(average);
-            plotView1.Model = myModel;
+            //myModel.Series.Add(bestPercentageSeries);
+            //myModel.Series.Add(averageSeries);
+            //plotView1.Model = myModel;
+
+            var bestPercentage = 0.0;
+            var toleranceForBestPercentage = 0;
+            var thresholdForBestPercentage = 0;
+            foreach (var result in results)
+            {
+                if (result.BestSecretaryPercentage > bestPercentage)
+                {
+                    bestPercentage = result.BestSecretaryPercentage;
+                    toleranceForBestPercentage = result.Tolerance;
+                    thresholdForBestPercentage = result.Threshold;
+                }
+            }
+
+            var bestAverage = 0.0;
+            var toleranceForBestAverage = 0;
+            var thresholdForBestAverage = 0;
+            foreach (var result in results)
+            {
+                if (result.AverageQuality > bestAverage)
+                {
+                    bestAverage = result.AverageQuality;
+                    toleranceForBestAverage = result.Tolerance;
+                    thresholdForBestAverage = result.Threshold;
+                }
+            }
         }
     }
 }
