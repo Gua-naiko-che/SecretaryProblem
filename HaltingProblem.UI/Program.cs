@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace HaltingProblem.UI
@@ -15,7 +14,7 @@ namespace HaltingProblem.UI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var results = HaltingProblem.Core.HaltingProblem.GetResults(Enumerable.Range(0, 100), Enumerable.Range(37, 1).ToList(), 1000);
+            var results = Core.HaltingProblem.GetResults(0, 100, 37, 37, 100000);
 
             Application.Run(new Form1(results));
         }

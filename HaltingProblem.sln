@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaltingProblem.UI", "Haltin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaltingProblem.Core", "HaltingProblem.Core\HaltingProblem.Core.csproj", "{AD3B8FB9-ED7B-4171-8819-39C335635BE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaltingProblem.Console", "HaltingProblem.Console\HaltingProblem.Console.csproj", "{BB01633E-06E1-476B-BA5E-5CE9DAF51D4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AD3B8FB9-ED7B-4171-8819-39C335635BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD3B8FB9-ED7B-4171-8819-39C335635BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD3B8FB9-ED7B-4171-8819-39C335635BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB01633E-06E1-476B-BA5E-5CE9DAF51D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB01633E-06E1-476B-BA5E-5CE9DAF51D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB01633E-06E1-476B-BA5E-5CE9DAF51D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB01633E-06E1-476B-BA5E-5CE9DAF51D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
