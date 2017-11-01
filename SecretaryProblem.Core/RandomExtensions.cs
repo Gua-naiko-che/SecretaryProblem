@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HaltingProblem.Core
+namespace SecretaryProblem.Core
 {
     internal static class RandomExtensions
     {

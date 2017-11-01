@@ -1,4 +1,4 @@
-namespace HaltingProblem.Core
+namespace SecretaryProblem.Core
 {
     public class Result
     {

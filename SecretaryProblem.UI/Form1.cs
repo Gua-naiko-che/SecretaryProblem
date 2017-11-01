@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using HaltingProblem.Core;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
+using SecretaryProblem.Core;
 
-namespace HaltingProblem.UI
+namespace SecretaryProblem.UI
 {
     public partial class Form1 : Form
     {

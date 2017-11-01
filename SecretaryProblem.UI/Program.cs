@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace HaltingProblem.UI
+namespace SecretaryProblem.UI
 {
     internal static class Program
     {

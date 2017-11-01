@@ -1,4 +1,4 @@
-﻿namespace HaltingProblem.Console
+﻿namespace SecretaryProblem.Console
 {
     public class Program
     {
