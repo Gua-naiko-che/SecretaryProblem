@@ -28,8 +28,8 @@ namespace HaltingProblem.Core
                     {
                         Tolerance = combination.tolerance,
                         Threshold = combination.threshold,
-                        BestApplicantPercentage = (result.Count(s => s == 100) / (double)numberOfExperiments),
-                        AverageQuality = (result.Average())
+                        BestApplicantPercentage = (result.Count(s => s.Item2) / (double)numberOfExperiments),
+                        AverageQuality = (result.Select(r => r.Item1).Average())
                     };
                 })
                 .ToList();
@@ -37,10 +37,9 @@ namespace HaltingProblem.Core
             return results;
         }
 
-        private static int GetBestApplicantyWithThreshold(double tolerance, int threshold)
+        private static Tuple<double, bool> GetBestApplicantyWithThreshold(double tolerance, int threshold)
         {
-            var applicants = Enumerable.Range(1, 100).ToArray();
-            RandomGenerator.Shuffle(applicants);
+            var applicants = Enumerable.Repeat(1, 100).Select(x => RandomGenerator.NextDouble()).ToList();
             var bestInExploration = applicants.Take(threshold).Max();
             var bestWithTolerance = bestInExploration * (1 - tolerance / 100.0);
 
@@ -48,11 +47,11 @@ namespace HaltingProblem.Core
             {
                 if (applicant > bestWithTolerance)
                 {
-                    return applicant;
+                    return new Tuple<double, bool>(applicant, applicant == applicants.Max());
                 }
             }
 
-            return applicants.Last();
+            return new Tuple<double, bool>(applicants.Last(), false);
         }
     }
 }

@@ -17,7 +17,7 @@ namespace HaltingProblem.UI
             myModel.Axes.Add(new LinearAxis { Title = "Tolerance", Position = AxisPosition.Bottom });
 
             var bestPercentageSeries = new LineSeries { Title = "Best percentage" };
-            bestPercentageSeries.Points.AddRange(results.Select(r => new DataPoint(r.Tolerance, r.BestApplicantPercentage * 100)));
+            bestPercentageSeries.Points.AddRange(results.Select(r => new DataPoint(r.Tolerance, r.BestApplicantPercentage)));
 
             var averageSeries = new LineSeries { Title = "Average" };
             averageSeries.Points.AddRange(results.Select(r => new DataPoint(r.Tolerance, r.AverageQuality)));
